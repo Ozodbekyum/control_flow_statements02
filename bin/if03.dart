@@ -9,12 +9,12 @@ Returns:
     int: return answer. 
 */
 int func(int a, int b, int c) {
-  if (a > b) {
+  if (a < b) {
     if (a > c) {
       return a;
     }
-  } else if (c > a) {
-    if (c < b) {
+  } else if (c < a) {
+    if (c > b) {
       return c;
     }
   }
@@ -22,5 +22,5 @@ int func(int a, int b, int c) {
 }
 
 void main() {
-  print(func(9, 5, 10));
+  print(func(11, 5, 10));
 }
